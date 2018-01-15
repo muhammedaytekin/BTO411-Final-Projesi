@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>My Project</title>
+    
+    <link href="css/resume.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+
+<style type="text/css">
+
+    #list
+    {
+    	font-size:20px;
+    	font-family: 'Roboto Mono', monospace;
+    	letter-spacing: 2px;
+    	font-weight: bold;
+    }
+    #hakkimda
+    {
+    	font-size:25px;
+    	font-family: 'Roboto Mono', monospace;
+    	letter-spacing: 1px;
+    	color: black;
+    	font-weight: bold;
+    	line-height: 50px;
+    	padding-left: 50px;
+    	padding-right: 50px;
+    }   
+   #orangecanvas
+   {
+        font-size:20px;
+    	font-family: 'Roboto Mono', monospace;
+    	letter-spacing: 1px;
+    	color: black;
+    	font-weight: bold;
+    	line-height: 30px;
+    	padding-left: 50px;
+    	padding-right: 50px;
+    	text-align: justify;
+   }
+   .w3-bar-item
+   {
+ 		text-decoration: none;
+ 		font-size: 20px;
+ 		font-weight: bold;
+ 		font-family: 'Roboto Mono', monospace;
+   }
+	a:hover, a:visited, a:link, a:active
+	{
+	    text-decoration: none;
+	}
+	.w3-panel
+	{
+		height: 500px; 
+		margin-left: 50px;
+	}
+
+
+</style>
+
+
+  </head>
+
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav" style="background-color: #1c1c1c;">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none" style="font-family: 'Open Sans', sans-serif; font-size:20px; letter-spacing: 2px;"><strong>Alperen FİŞNE</strong></span>
+        <span class="d-none d-lg-block">
+          <img class="w3-card-4 img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile2.png" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about" id="list"><span><strong>Hakkımda</strong></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#orange" id="list"><span><strong>Orange Canvas?</strong></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#mywork" id="list"><span><strong>Çalışmalarım</strong></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#teamwork" id="list"><span><strong>Grup Çalışmalarımız</strong></span></a>
+          </li>
+          <br>
+          <br>
+          <br>
+          <br>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto" id="hakkimda">
+        <span style="font-size: 36px;"><strong>Alperen FİŞNE</strong></span><br>
+        <span>Hacettepe Üniversitesi, Eğitim Fakültesi</span><br>
+        <span>Bilgisayar ve Öğretim Teknolojileri Eğitimi Bölümü</span><br>
+        <span>4. Sınıf Öğrencisi.</span><br>
+        
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="orange">
+        <div class="my-auto">
+         <center>
+         <a href="https://orange.biolab.si/" target="_blank;">
+         <img class="img-fluid img-profile mx-auto mb-2" src="img/orange.png" alt="Orange Canvas uygulamasına dair ayrıntılı bilgi için lütfen üstteki resme tıklayınız!" style="cursor:pointer;">
+         </a>
+         </center><br>
+         <p id="orangecanvas">Bu yayınımda verileri anlamlandırmak, daha kolay yorumlayabilmek ve ilgi çekici hale getirmek için çalışmalar yapacağım. Çalışmalarımda son zamanlarda popüler olan  <font style="color: #de0f17;">orange canvas</font> uygulamasını kullanacağım. Orange Canvas uygulamasına dair ayrıntılı bilgi için lütfen üstteki resme tıklayınız.</p>    
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column"  id="mywork">
+       
+        <div class="my-auto">
+        	<div class="w3-center">
+        
+				<div class="container-fuild">
+        		<div class="row">
+        			<div class="col-md-1"></div>
+           			<div class="col-md-10">
+           				<div class="w3-container">
+					<div class="w3-bar w3-black">
+					    <button class="w3-bar-item w3-button tablink w3-red" onclick="MyWork(event,'m1')">Model 1</button>
+					    <button class="w3-bar-item w3-button tablink" onclick="MyWork(event,'m2')">Model 2</button>
+					    <button class="w3-bar-item w3-button tablink" onclick="MyWork(event,'m3')">Model 3</button>
+					    <button class="w3-bar-item w3-button tablink" onclick="MyWork(event,'m4')">Model 4</button>
+					    <button class="w3-bar-item w3-button tablink" onclick="MyWork(event,'m5')">Model 5</button>
+					 </div>
+					
+					 <div id="m1" class="w3-container w3-border work w3-animate-left" style="animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+					    <h2>Model 1</h2>
+					  </div>
+
+					  <div id="m2" class="w3-container w3-border work w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;"">
+					    <h2>Model 2</h2>
+					  </div>
+
+					  <div id="m3" class="w3-container w3-border work w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;"">
+					    <h2>Model 3</h2>
+					  </div>
+					    <div id="m4" class="w3-container w3-border work w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;"">
+					   <h2>Model 4</h2>
+					  </div>
+					    <div id="m5" class="w3-container w3-border work w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;"">
+					   <h2>Model 5</h2>
+					  </div>
+					</div>
+           			</div>
+           			<div class="col-md-1"></div>
+           		</div>
+           	</div>
+
+        	</div>
+        </div>
+
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="teamwork">
+
+        <div class="my-auto">
+		<div class="w3-center">
+
+			<div class="container-fuild">
+        		<div class="row">
+        			<div class="col-md-1"></div>
+           			<div class="col-md-10">
+           				<div class="w3-container">
+					<div class="w3-bar w3-black">
+					    <button class="w3-bar-item w3-button tablink1 w3-red" onclick="TeamWork(event,'gm1')">Model 1</button>
+					    <button class="w3-bar-item w3-button tablink1" onclick="TeamWork(event,'gm2')">Model 2</button>
+					    <button class="w3-bar-item w3-button tablink1" onclick="TeamWork(event,'gm3')">Model 3</button>
+					    <button class="w3-bar-item w3-button tablink1" onclick="TeamWork(event,'gm4')">Model 4</button>
+					    <button class="w3-bar-item w3-button tablink1" onclick="TeamWork(event,'gm5')">Model 5</button>
+					 </div>
+					
+					 <div id="gm1" class="w3-container w3-border teamwork w3-animate-left" style="animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+					    <h2>Model 1</h2>
+					  </div>
+
+					  <div id="gm2" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+					    <h2>Model 2</h2>
+					  </div>
+
+					  <div id="gm3" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+					    <h2>Model 3</h2>
+					  </div>
+					    <div id="gm4" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+					   <h2>Model 4</h2>
+					  </div>
+					    <div id="gm5" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+					   <h2>Model 5</h2>
+					  </div>
+					</div>
+           			</div>
+           			<div class="col-md-1"></div>
+           		</div>
+           	</div>
+			
+		</div>
+        </div>
+      </section>
+
+
+    </div>
+
+
+  </body>
+
+</html>
+
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/resume.min.js"></script>
+   
+<script type="text/javascript">
+
+function MyWork(evt, frame) 
+{
+  var i, x, tablinks;
+  x = document.getElementsByClassName("work");
+  for (i = 0; i < x.length; i++) 
+  {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++)
+   {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(frame).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+
+function TeamWork(evt, frame2) 
+{
+  var i, x, tablinks;
+  x = document.getElementsByClassName("teamwork");
+  for (i = 0; i < x.length; i++) 
+  {
+      x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink1");
+  for (i = 0; i < x.length; i++)
+   {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(frame2).style.display = "block";
+  evt.currentTarget.className += " w3-red";
+}
+
+</script>

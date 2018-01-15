@@ -1,0 +1,137 @@
+<!DOCTYPE html><html><head>
+    <meta charset="utf-8">
+    <title>Orange Report</title>
+
+    <style>
+    html, body, table {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        margin:0px;
+        padding:0;
+        border:0 none;
+    }
+
+    h1, h2 , h3, h4, h5 {
+       padding: 1px;
+       font-size:100%;
+    }
+
+    h1 {
+        color: white;
+        background-color: black;
+        padding: 4px;
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    h2 {
+        border-bottom: 1px solid black;
+        padding-left: 2px;
+    }
+
+    ul, table, p {
+        padding: 10px;
+    }
+
+    table {
+        margin-left: -6px;
+    }
+
+    span.timestamp {
+        position: absolute;
+        right: 40px;
+        color:#ddd;
+    }
+
+    div.selected, div.normal {
+        margin: 5px;
+    }
+
+    div.selected {
+        background: #ddd;
+    }
+    @media print{
+        div.selected {
+            background: inherit;
+        }
+        ::-webkit-input-placeholder {
+            color: transparent;
+        }
+    }
+
+    div.content {
+        margin-left: 15px;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 2px 6px 2px 6px;
+    }
+
+    th {
+        font-weight: bold;
+    }
+
+    @media screen {
+        td, th {
+            white-space: nowrap;
+        }
+    }
+
+    .caption {
+        text-align: center;
+        font-size: 90%;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-height: 20cm;
+    }
+
+    span.legend-square {
+        width: 1em;
+        height: 1em;
+        margin-right: 6px;
+        display: inline-block;
+    }
+
+    span.legend-item {
+        margin-right: 24px;
+    }
+
+    textarea {
+        border: 1px solid silver;
+        font-style: italic;
+        width: 100%;
+        height: 4em;
+    }
+
+    .textwrapper {
+        padding: 15px;
+    }
+
+    div.normal textarea:invalid {
+        display: none;
+    }
+
+    div.selected textarea {
+        display: block;
+    }
+
+    @media print{
+        section.section, img {
+            page-break-inside: avoid;
+        }
+    }
+    </style>
+
+
+</head><body>
+
+ 
+
+<div id="467064011224" class="normal" onclick="pybridge._select_item(this.id)"><section class="section"><h1>Box Plot <span class="timestamp">Mon Jan 15 18, 13:03:14</span></h1><div class="content">
+<img src="data:image/png;base64,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"><p class="caption">Box plot for attribute 'A1' grouped by 'A16'</p></div></section>
+
+<div class="textwrapper"><textarea placeholder="Write a comment..." oninput="this.innerHTML = this.value;pybridge._add_comment(this.parentNode.parentNode.id, this.value);"></textarea></div></div></body></html>

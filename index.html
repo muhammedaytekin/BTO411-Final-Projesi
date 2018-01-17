@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="tr">
 
@@ -61,7 +62,29 @@
 		margin-left: 50px;
 	}
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
 
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
 </style>
 
 
@@ -71,7 +94,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="sideNav" style="background-color: #1c1c1c;">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none" style="font-family: 'Open Sans', sans-serif; font-size:20px; letter-spacing: 2px;"><strong>Alperen FİŞNE</strong></span>
+        <span class="d-block d-lg-none" style="font-family: 'Open Sans', sans-serif; font-size:20px; letter-spacing: 2px;"><strong>Muhammed AYTEKİN</strong></span>
         <span class="d-none d-lg-block">
           <img class="w3-card-4 img-fluid img-profile rounded-circle mx-auto mb-2" src="img/muhammedfoto.png" alt="">
         </span>
@@ -97,6 +120,7 @@
           <br>
           <br>
           <br>
+          <span style="font-size:15px; letter-spacing: 2px; color:white;"><strong>Copyright@2018</strong></span>
         </ul>
       </div>
     </nav>
@@ -109,7 +133,12 @@
         <span>Hacettepe Üniversitesi, Eğitim Fakültesi</span><br>
         <span>Bilgisayar ve Öğretim Teknolojileri Eğitimi Bölümü</span><br>
         <span>4. Sınıf Öğrencisi.</span><br>
-        
+
+         <hr>
+        <span style="font-size:20px;">BTÖ411 Proje Geliştirme ve Yönetimi I Dersi - "Veri Görselleştirme Projesi"</span><br>
+        <span style="font-size:20px;">Doç. Dr. Alev ÖZKÖK - Arş. Gör. Tayfun AKIN</span><br>
+        <span style="font-size:20px;">Github Proje Linki: https://github.com/muhammedaytekin/BTO411-Final-Projesi.git </span><br>
+
         </div>
       </section>
 
@@ -122,6 +151,9 @@
          </center><br>
          <p id="orangecanvas">Bu yayınımda verileri anlamlandırmak, daha kolay yorumlayabilmek ve ilgi çekici hale getirmek için çalışmalar yapacağım. Çalışmalarımda son zamanlarda popüler olan  <font style="color: #de0f17;">orange canvas</font> uygulamasını kullanacağım. Orange Canvas uygulamasına dair ayrıntılı bilgi için lütfen üstteki resme tıklayınız.</p>    
         </div>
+        <div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
 
       </section>
 
@@ -136,45 +168,30 @@
            			<div class="col-md-10">
            				<div class="w3-container">
 					<div class="w3-bar w3-black">
-					    <button class="w3-bar-item w3-button tablink w3-red" onclick="MyWork(event,'m1')">Model 1</button>
-					    <button class="w3-bar-item w3-button tablink" onclick="MyWork(event,'m2')">Model 2</button>
-					    <button class="w3-bar-item w3-button tablink" onclick="MyWork(event,'m3')">Model 3</button>
-					    <button class="w3-bar-item w3-button tablink" onclick="MyWork(event,'m4')">Model 4</button>
-					    <button class="w3-bar-item w3-button tablink" onclick="MyWork(event,'m5')">Model 5</button>
+					    <button class="w3-bar-item w3-button tablink w3-red" onclick="MyWork(event,'m1')">Scatter Plot</button>
+					    <button class="w3-bar-item w3-button tablink" onclick="MyWork(event,'m2')">Distributions</button>
+					    <button class="w3-bar-item w3-button tablink" onclick="MyWork(event,'m3')">Sieve Diagram</button>
 					 </div>
 					
-					 <div id="m1" class="w3-container w3-border work w3-animate-left" style="animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
-					    <h2>
-              
-              <img src="img/ma1.png" style="width: 770px; height: 490px;">
-              </h2>
+					 <div id="m1" class="w3-container w3-border work w3-animate-left" style="animation-duration: 1.5s; height: 550px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+			
+             			 <iframe src="bireyselbir.html" height="500" width="600" frameborder="0"></iframe>
+             			 <p style="position:relative; margin-top:-50px;  display: block; font-size: 15px;">Veri kümesi olarak,<font style="color: #de0f17;">cancer.csv</font> seçilmiştir. Modeli analiz edecek olursak, belirli yaşlardaki kansere sebep olan tümörlerin büyüklüğü ve ortaya çıkma olasılığı anlatılmıştır. </p>
+
 					  </div>
 
-					  <div id="m2" class="w3-container w3-border work w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;"">
-					    <h2>
-           
-           <img src="img/ma2.png" style="width: 770px; height: 490px;">     
-              </h2>
+					  <div id="m2" class="w3-container w3-border work w3-animate-left" style="display:none; animation-duration: 1.5s; height: 550px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+
+						<iframe src="bireyseliki.html" height="500" width="600" frameborder="0"></iframe>
+						<p style="position:relative; margin-top:-50px;  display: block; font-size: 15px;">Veri kümesi olarak,<font style="color: #de0f17;">cancer.csv</font> seçilmiştir. Modeli analiz edecek olursak, belirli yaşlardaki kansere sebep olan tümörlerin büyüklüğü ve ortaya çıkma olasılığı anlatılmıştır. </p>
 					  </div>
 
-					  <div id="m3" class="w3-container w3-border work w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;"">
-					    <h2>
-           
-           <img src="img/ma3.png" style="width: 770px; height: 490px;">     
-              </h2>
+					  <div id="m3" class="w3-container w3-border work w3-animate-left" style="display:none; animation-duration: 1.5s; height: 550px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;"">
+						
+						<iframe src="bireyseluc.html" height="500" width="600" frameborder="0"></iframe>
+						<p style="position:relative; margin-top:-50px;  display: block; font-size: 15px;">Veri kümesi olarak,<font style="color: #de0f17;">cancer.csv</font> seçilmiştir. Modeli analiz edecek olursak, belirli yaşlardaki kansere sebep olan tümörlerin büyüklüğü ve ortaya çıkma olasılığı anlatılmıştır. </p>
 					  </div>
-					    <div id="m4" class="w3-container w3-border work w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;"">
-					   <h2>
-          
-          <img src="img/ma4.png" style="width: 770px; height: 490px;">     
-             </h2>
-					  </div>
-					    <div id="m5" class="w3-container w3-border work w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;"">
-					   <h2>
-          
-          <img src="img/ma5.png" style="width: 400px; height: 490px;">     
-             </h2>
-					  </div>
+					   
 					</div>
            			</div>
            			<div class="col-md-1"></div>
@@ -197,42 +214,37 @@
            			<div class="col-md-10">
            				<div class="w3-container">
 					<div class="w3-bar w3-black">
-					    <button class="w3-bar-item w3-button tablink1 w3-red" onclick="TeamWork(event,'gm1')">M.Aytekin</button>
-					    <button class="w3-bar-item w3-button tablink1" onclick="TeamWork(event,'gm2')">A.Fişne</button>
+					    <button class="w3-bar-item w3-button tablink1 w3-red" onclick="TeamWork(event,'gm1')">A.Fişne</button>
+					    <button class="w3-bar-item w3-button tablink1" onclick="TeamWork(event,'gm2')">M.Aytekin</button>
 					    <button class="w3-bar-item w3-button tablink1" onclick="TeamWork(event,'gm3')">Ö.Avcı</button>
 					    <button class="w3-bar-item w3-button tablink1" onclick="TeamWork(event,'gm4')">A.Özyurt</button>
 					    <button class="w3-bar-item w3-button tablink1" onclick="TeamWork(event,'gm5')">M.Karakaya</button>
 					 </div>
 					
-					 <div id="gm1" class="w3-container w3-border teamwork w3-animate-left" style="animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
-					    <h2>
-                  <img src="img/muhammedaytekin.png" style="width: 500px; height: 490px;">
-              </h2>
+					 <div id="gm1" class="w3-container w3-border teamwork w3-animate-left" style="animation-duration: 1.5s; height: 550px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+					   
+					 	<iframe src="af.html" height="460" width="600" frameborder="0"></iframe>	
+            <p style="position:relative; margin-top:0px; z-index: 999; display: block; font-size: 15px;">Veri kümesi olarak,<font style="color: #de0f17;">wine.tab</font> seçilmiştir. Bu model, şarap yapımında kullanılan bazı maddelerin şarabın kalitesine olan etkisini ve bu maddelerin miktarlarının dağılımını modellemektedir. </p>
 					  </div>
 
-					  <div id="gm2" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
-					    <h2>
-<img src="img/alperenfisne.png" style="width: 500px; height: 490px;">
-              </h2>
+					  <div id="gm2" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 550px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+
+					  	<iframe src="grupicin.html" height="510" width="600" frameborder="0"></iframe>
+					   <p style="position:relative; margin-top:-50px;  display: block; font-size: 15px;">Veri kümesi olarak,<font style="color: #de0f17;">satis.csv</font> seçilmiştir. Modeli analiz edecek olursak, bir marketin sattığı ürünlerden kaç tane sattığı ve yaptıkları kar incelenmektedir. </p>
 					  </div>
 
-					  <div id="gm3" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
-					    <h2>
-           
-           <img src="img/ozlem.png" style="width: 500px; height: 490px;">     
-              </h2>
+					  <div id="gm3" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 550px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+					   <iframe src="grup.html" height="510" width="600" frameborder="0"></iframe>
+             <p style="position:relative; margin-top:-50px;  display: block; font-size: 15px;">Veri kümesi olarak,<font style="color: #de0f17;">satis.csv</font> seçilmiştir. Modeli analiz edecek olursak, bir marketin sattığı ürünlerden kaç tane sattığı ve yaptıkları kar incelenmektedir. </p>
 					  </div>
-					    <div id="gm4" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
-					   <h2>
-          
-          <img src="img/aylinozyurt.png" style="width: 500px; height: 490px;">     
-             </h2>
+					    <div id="gm4" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 550px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+			<iframe src="aylingrup.html" height="510" width="600" frameborder="0"></iframe>
+             <p style="position:relative; margin-top:-50px;  display: block; font-size: 15px;">Veri kümesi olarak,<font style="color: #de0f17;">dermatology.tab</font> seçilmiştir. Modeli analiz edecek olursak bir takım dermatolojik rahatsızlıkların, sedef hastaları ve kronik dermatit gibi hastalıkların yaşa göre sıklığını içermektedir. </p>
+         
 					  </div>
-					    <div id="gm5" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 500px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
-					   <h2>
-          
-          <img src="img/melisa.png" style="width: 500px; height: 490px;">     
-             </h2>
+					    <div id="gm5" class="w3-container w3-border teamwork w3-animate-left" style="display:none; animation-duration: 1.5s; height: 550px; margin-top: 10px; font-size:20px; font-family: 'Roboto Mono', monospace; letter-spacing: 2px; font-weight: bold;">
+					  <iframe src="melisagrup.html" height="510" width="600" frameborder="0"></iframe>
+             <p style="position:relative; margin-top:-50px;  display: block; font-size: 15px;">Veri kümesi olarak,<font style="color: #de0f17;">conferences.csv</font> seçilmiştir. Modeli analiz ettiğimizde yazarların kağıt kullanımının Dergilere ve konferanslara göre dağılımı gösterilmiştir. </p>
 					  </div>
 					</div>
            			</div>
